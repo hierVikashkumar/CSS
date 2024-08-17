@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Display Property</title>
+
+    <style type="text/css">
+        h1{
+            text-align: center;
+        }
+        ul{
+            list-style-type: none;
+        }
+        #display-inline li{
+            display: inline;
+        }
+        #display-inline-block li{
+            display: inline-block;
+        }
+        #display-block li{
+            display: block;
+        }
+
+        .display-flex{
+            display: flex;
+        }
+        .display-flex div{
+            padding: 10px;
+            background-color: rgb(0, 255, 255);
+            border: 10px solid rgb(120, 234, 20);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Week Day</h1>
+
+    <!-- Example Display: inline Property -->
+    <ul id="display-inline">
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+        <li>Thursday</li>
+        <li>Friday</li>
+        <li>Saturday</li>
+    </ul>
+
+    <ul id="display-inline-block">
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+        <li>Thursday</li>
+        <li>Friday</li>
+        <li>Saturday</li>
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+        <li>Thursday</li>
+        <li>Friday</li>
+        <li>Saturday</li>
+    </ul>
+
+    <br>
+    <br>
+    <!-- Example Display: block Property -->
+    <div id="display-block">
+        <span>Monday</span>
+        <span>Tuesday</span> 
+        <span>Wednesday</span> 
+        <span>Thursday</span> 
+        <span>Friday</span> 
+        <span>Saturday</span>
+    </div>
+
+    <br>
+    <br>
+    <ul id="display-block">
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+        <li>Thursday</li>
+        <li>Friday</li>
+        <li>Saturday</li>
+    </ul>
+
+    <br>
+    <br>
+    <!-- Example Display: none Property -->
+    <div>This is visible</div>
+    <div style="display: none">This Div is hidden</div>
+
+    <!-- Example Display: flex Property -->
+    <br>
+    <br>
+    <div class="display-flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    
+</body>
+</html>

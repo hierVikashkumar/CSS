@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Bottom Property</title>
+
+    <style type="text/css">
+        div{
+            position: absolute;
+            width: 150px;
+            height: 200px;
+            font-size: 20px;
+        }
+
+        .class-len{
+            border: 2px solid green;
+            bottom: 100px;
+        }
+        .class-per{
+            border: 2px solid blue;
+            bottom: 50%;
+        }
+        .class-auto{
+            border: 2px solid orange;
+            bottom: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="class-len">
+        bottom: 100px;
+    </div>
+
+    <div class="class-per">
+        bottom: 50%;
+    </div>
+
+    <div class="class-auto">
+        bottom: auto;
+    </div>
+
+</body>
+</html>

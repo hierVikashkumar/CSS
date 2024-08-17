@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example ::first line</title>
+    
+    <style type="text/css">
+        body{
+            text-align: center;
+        }
+        h1::after{
+           content: "hello vikash";
+           color: red;
+        }
+        h1{
+            color: blue;
+        }
+        #curvedarrow{
+            margin: 0 auto;
+            position: relative;
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-right: 10px solid red;
+            transform: rotate(10deg);
+        }
+        #curvedarrow::after{
+            content: "";
+            position: absolute;
+            border: 0 solid transparent;
+            border-top: 3px solid red;
+            border-radius: 20px 0 0;
+            top: -12px;
+            left: -9px;
+            width: 15px;
+            height: 15px;
+            transform: rotate(45deg);
+        }
+    </style>
+<body>
+
+    <h1>Welcome to.</h1>
+
+    <h2>This is an Example of :: fist line pseudo element</h2>
+
+    <h3>In the first line the "hello world" is added using ::before pseudo element</h3>
+
+    <div id="curvedarrow"></div>
+    
+</body>
+</html>

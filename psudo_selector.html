@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Psudo Selector</title>
+
+    <style type="text/css">
+        .background-lightgreen{
+            background-color: green;
+            padding: 10px;
+            color: aqua;
+            text-align: center;
+        }
+
+        .background-lightgreen:hover{
+            background-color: rgb(229, 255, 0);
+            color: rgb(55, 11, 235);
+        }
+        .background-anchor{
+            background-color: aqua;
+            text-align: center;
+        }
+        .background-anchor a:active{
+            color: green;
+        }
+        .background-anchor a:visited{
+            color: yellow;
+        }
+        #visit:visited{
+            color: yellow;
+        }
+
+        p:lang(fr){
+            color: blue;
+        }
+        
+        input:focus{
+            border: 10px solid;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="background-lightgreen">
+        <p>This is div Tag.</p>
+    </div>
+
+    <div class="background-anchor">
+       <a href="http://" target="_blank"> This is a line</a>
+    </div>
+
+    <p> This P Tag is without Attribute</p>
+    <p lang="fr"> This P Tag is with Attribute</p>
+
+    <input type="text" name="First Name" placeholder="First Name">
+
+</body>
+</html>
